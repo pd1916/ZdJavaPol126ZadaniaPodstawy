@@ -21,8 +21,8 @@ public class Task7 {
     private static double calculatePercentOfSpacesInString(String input) {
         if(StringValidator.isValid(input) && input.contains(String.valueOf(SPACE_SIGN))) {
             double spacesCounter = 0;
-            for (int i = 0; i < input.length(); i++) {
-                if (input.charAt(i) == SPACE_SIGN) {
+            for(int i = 0; i < input.length(); i++) {
+                if(input.charAt(i) == SPACE_SIGN) {
                     spacesCounter++;
                 }
             }

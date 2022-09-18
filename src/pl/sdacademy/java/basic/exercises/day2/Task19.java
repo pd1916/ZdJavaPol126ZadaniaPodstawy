@@ -3,11 +3,11 @@ package pl.sdacademy.java.basic.exercises.day2;
 public class Task19 {
 
     public static void main(String[] args) {
-        int[][] firstArray = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        int[][] secondArray = { {10, -1, 5}, {-25, 6, 6}, {12, 8, 9}};
+        int[][] firstArray = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        int[][] secondArray = {{10, -1, 5}, {-25, 6, 6}, {12, 8, 9}};
         int[][] result1 = returnArrayWithBiggerSumOfDigit(firstArray, secondArray);
         System.out.print("Bigger array is: ");
-        for (int[] i : result1) {
+        for(int[] i : result1) {
             for(int j : i) {
                 System.out.print(j + " ");
             }
@@ -26,10 +26,10 @@ public class Task19 {
         return sumOfDigitsFirstArray > sumOfDigitsSecondArray ? firstArray : secondArray;
     }
 
-    private static  int sumOfDigits(int[][] array) {
+    private static int sumOfDigits(int[][] array) {
         int sum = 0;
         for(int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
+            for(int j = 0; j < array[i].length; j++) {
                 sum += array[i][j];
             }
         }
@@ -46,7 +46,7 @@ public class Task19 {
     private static int theBiggestDigit(int[][] array) {
         int digit = Integer.MIN_VALUE;
         for(int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
+            for(int j = 0; j < array[i].length; j++) {
                 if(digit < array[i][j]) {
                     digit = array[i][j];
                 }
@@ -65,7 +65,7 @@ public class Task19 {
     private static int theSmallestDigit(int[][] array) {
         int digit = Integer.MAX_VALUE;
         for(int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
+            for(int j = 0; j < array[i].length; j++) {
                 if(digit > array[i][j]) {
                     digit = array[i][j];
                 }

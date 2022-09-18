@@ -33,7 +33,7 @@ public class Task5 {
         do {
             sum += start;
             start++;
-        }while(start <= stop);
+        } while(start <= stop);
 
         return sum;
     }

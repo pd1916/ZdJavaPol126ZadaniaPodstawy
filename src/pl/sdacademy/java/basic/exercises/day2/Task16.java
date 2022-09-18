@@ -12,7 +12,7 @@ public class Task16 {
     }
 
     private static int[] reverseArray(int[] input) {
-        for(int i=0; i<input.length/2; i++) {
+        for(int i = 0; i < input.length / 2; i++) {
             int nextPositionElement = (input.length - 1) - i;
             int tmp = input[i];
             input[i] = input[nextPositionElement];

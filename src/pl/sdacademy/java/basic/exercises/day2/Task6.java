@@ -23,8 +23,8 @@ public class Task6 {
 
     private static int getIndex(String input, char searchedCharacter) {
         if(StringValidator.isValid(input) && input.contains(String.valueOf(searchedCharacter))) {
-            for (int i = 0; i < input.length(); i++) {
-                if (input.charAt(i) == searchedCharacter) {
+            for(int i = 0; i < input.length(); i++) {
+                if(input.charAt(i) == searchedCharacter) {
                     return i;
                 }
             }

@@ -30,10 +30,10 @@ public class Task14 {
     private static double setAndVerifyAmount() {
         System.out.print("Please insert amount: ");
         double amount = input.nextDouble();
-        if (amount < 100) {
+        if(amount < 100) {
             System.out.printf("Amount is too small. Default value %.2f was set\n", DEFAULT_AMOUNT_MIN); // %.2f -> sposób formatowania liczb zmiennoprzecinkowych
             return DEFAULT_AMOUNT_MIN;
-        } else if (amount > 10_000) {
+        } else if(amount > 10_000) {
             System.out.printf("Amount is too big. Default value %.2f was set\n", DEFAULT_AMOUNT_MAX);
             return DEFAULT_AMOUNT_MAX;
         }
@@ -43,10 +43,10 @@ public class Task14 {
     private static int setAndVerifyNumberOfInstallments() {
         System.out.print("Please insert number of installments: ");
         int numberOfInstallments = input.nextInt();
-        if (numberOfInstallments < 6) {
+        if(numberOfInstallments < 6) {
             System.out.printf("Number of installments is too small. Default value %d was set\n", DEFAULT_NUMBER_OF_INSTALLMENTS_MIN); // %.2f -> sposób formatowania liczb
             return DEFAULT_NUMBER_OF_INSTALLMENTS_MIN;
-        } else if (numberOfInstallments > 48) {
+        } else if(numberOfInstallments > 48) {
             System.out.printf("Number of installments is too big. Default value %d was set\n", DEFAULT_NUMBER_OF_INSTALLMENTS_MAX);
             return DEFAULT_NUMBER_OF_INSTALLMENTS_MAX;
         }
@@ -55,9 +55,9 @@ public class Task14 {
 
     private static double getSingleAmountOfInstallments(int numberOfInstallments, double amount) {
         double singleAmountOfInstallment;
-        if (numberOfInstallments >= 6 && numberOfInstallments < 13) {
+        if(numberOfInstallments >= 6 && numberOfInstallments < 13) {
             singleAmountOfInstallment = calculateTotalAmountWithThreshold(FIRST_THRESHOLD, amount) / numberOfInstallments;
-        } else if (numberOfInstallments >= 13 && numberOfInstallments < 25) {
+        } else if(numberOfInstallments >= 13 && numberOfInstallments < 25) {
             singleAmountOfInstallment = calculateTotalAmountWithThreshold(SECOND_THRESHOLD, amount) / numberOfInstallments;
         } else {
             singleAmountOfInstallment = calculateTotalAmountWithThreshold(THIRD_THRESHOLD, amount) / numberOfInstallments;

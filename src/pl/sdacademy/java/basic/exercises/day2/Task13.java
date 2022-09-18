@@ -20,7 +20,7 @@ public class Task13 {
 //                minValue = inputs[i];
 //            }
 //        }
-        for (int element : inputs) {
+        for(int element : inputs) {
             if(minValue > element) {
                 minValue = element;
             }

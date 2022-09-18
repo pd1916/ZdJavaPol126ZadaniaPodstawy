@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task4 {
     private static final float BMI_MIN_RANGE = 18.5F;
     private static final float BMI_MAX_RANGE = 24.9F;
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         float weight = getWeightFromUser();

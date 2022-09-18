@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task10 {
 
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.print("How many words would you like insert? ");
@@ -17,7 +17,7 @@ public class Task10 {
         StringBuilder result = new StringBuilder();
         while(howManyWords-- > 0) {
             String word = scanner.nextLine();
-            result.append(word.charAt(word.length()-1));
+            result.append(word.charAt(word.length() - 1));
         }
         return result.toString();
     }

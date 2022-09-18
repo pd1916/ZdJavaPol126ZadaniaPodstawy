@@ -8,10 +8,10 @@ public class Task12 {
         System.out.println("Result of 3%4 = " + ownModuloImplementation(3, 4));
         System.out.println("Result of 4%3 = " + ownModuloImplementation(4, 3));
 
-        System.out.println(ifOwnModuloImplementationIsCorrect(2 , 4));
-        System.out.println(ifOwnModuloImplementationIsCorrect(4 , 2));
-        System.out.println(ifOwnModuloImplementationIsCorrect(3 , 4));
-        System.out.println(ifOwnModuloImplementationIsCorrect(4 , 3));
+        System.out.println(ifOwnModuloImplementationIsCorrect(2, 4));
+        System.out.println(ifOwnModuloImplementationIsCorrect(4, 2));
+        System.out.println(ifOwnModuloImplementationIsCorrect(3, 4));
+        System.out.println(ifOwnModuloImplementationIsCorrect(4, 3));
     }
 
     private static int ownModuloImplementation(int a, int b) {

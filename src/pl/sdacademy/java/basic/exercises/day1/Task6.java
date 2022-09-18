@@ -4,7 +4,7 @@ public class Task6 {
 
     public static void main(String[] args) {
         printMultiplicationTable();
-        printMultiplicationTable(6, 2 ,5);
+        printMultiplicationTable(6, 2, 5);
     }
 
     private static void printMultiplicationTable() {
@@ -30,6 +30,6 @@ public class Task6 {
             int result = multiplier * minMultiplicand;
             System.out.println(multiplier + " * " + minMultiplicand + " = " + result);
             minMultiplicand++;
-        }while(minMultiplicand <=maxMultiplicand);
+        } while(minMultiplicand <= maxMultiplicand);
     }
 }

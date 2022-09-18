@@ -1,7 +1,5 @@
 package pl.sdacademy.java.basic.exercises.day1;
 
-import java.time.LocalDateTime;
-
 public class Task9 {
     public static void main(String[] args) {
         for(int i = 1; i <= 15; i++) {
@@ -27,9 +25,9 @@ public class Task9 {
         } else if(number % 3 == 0) {
             result = "Fizz";
         } else if(number % 5 == 0) {
-            result= "Buzz";
+            result = "Buzz";
         } else {
-            result= String.valueOf(number);
+            result = String.valueOf(number);
         }
         return result;
     }

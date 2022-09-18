@@ -12,8 +12,8 @@ public class Task20 {
     private static int[] generateArithmeticProgression(int length, int firstElement, int odds) {
         int[] result = new int[length];
         result[0] = firstElement;
-        for(int i = 1; i < length; i ++) {
-            result[i] = result[i-1] + odds;
+        for(int i = 1; i < length; i++) {
+            result[i] = result[i - 1] + odds;
         }
         return result;
     }
@@ -21,7 +21,7 @@ public class Task20 {
     private static boolean isArithmeticSequence(int[] input) {
         boolean result = false;
         for(int i = 0; i < input.length - 2; i++) {
-            if(input[i] - input[i+1] == input[i+1] - input[i+2]) {
+            if(input[i] - input[i + 1] == input[i + 1] - input[i + 2]) {
                 result = true;
             } else {
                 return result;

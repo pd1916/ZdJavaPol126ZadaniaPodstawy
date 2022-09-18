@@ -18,10 +18,10 @@ public class Task12 {
     }
 
     private static String encryptText(String input, int shift) {
-        if(StringValidator.isValid(input) && shift != 0 ) {
+        if(StringValidator.isValid(input) && shift != 0) {
             StringBuilder encryptedSb = new StringBuilder();
-            for (int i = 0; i < input.length(); i++) {
-                if (input.charAt(i) >= VALUE_LOWER_A_IN_ASCII && input.charAt(i) <= VALUE_LOWER_Z_IN_ASCII) {
+            for(int i = 0; i < input.length(); i++) {
+                if(input.charAt(i) >= VALUE_LOWER_A_IN_ASCII && input.charAt(i) <= VALUE_LOWER_Z_IN_ASCII) {
                     char c = (char) ((((input.charAt(i) - (VALUE_LOWER_A_IN_ASCII - shift)) % DIFF_A_AND_Z_LETTER) + VALUE_LOWER_A_IN_ASCII));
                     encryptedSb.append(c);
                 }

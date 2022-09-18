@@ -17,7 +17,7 @@ public class Task13 {
             digit = input.nextInt();
             input.nextLine();
             totalNumber++;
-            if(digit%2 == 0) {
+            if(digit % 2 == 0) {
                 totalNumberEven++;
             }
             totalSum += digit;
@@ -25,7 +25,7 @@ public class Task13 {
 
         System.out.println("Total Number Of Digits: " + --totalNumber); // pomijanie zera
         System.out.println("Total Number Of Even Digits: " + --totalNumberEven); // pomijanie zera
-        arithmeticAverage = (float)totalSum / totalNumber;
+        arithmeticAverage = (float) totalSum / totalNumber;
         System.out.println("Arithmetic Average: " + arithmeticAverage);
     }
 }

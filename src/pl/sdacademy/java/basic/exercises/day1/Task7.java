@@ -39,7 +39,7 @@ public class Task7 {
 
     private static float calculate(float firstDigit, float secondDigit, String operator) {
         float result = 0;
-        switch (operator) {
+        switch(operator) {
             case "+":
                 result = firstDigit + secondDigit;
                 break;
@@ -47,7 +47,7 @@ public class Task7 {
                 result = firstDigit - secondDigit;
                 break;
             case "/":
-                if(secondDigit== 0) {
+                if(secondDigit == 0) {
                     System.out.println("Wrong operation");
                     System.exit(1); // żeby zakończyć program, nie jest to najlepszy sposób ale na obecny etapie nauki możemy tak to zostawić
                 } else {

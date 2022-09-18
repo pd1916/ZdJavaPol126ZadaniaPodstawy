@@ -33,6 +33,7 @@ public class Task3 {
         boolean result = (y++ < ++x) && (--x < y++);
         System.out.println("If y++ is smaller than ++x and --x is smaller than y++: " + result);
     }
+
     private static void methodForPointD(int x, int y) {
         boolean result = (x * y) % 2 == 0;
         System.out.println("If x * y is even: " + result);

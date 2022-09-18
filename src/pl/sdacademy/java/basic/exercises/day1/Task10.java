@@ -15,7 +15,7 @@ public class Task10 {
         int sum = 0;
         //#1 option
         if(number > 9) {
-            while (number != 0) {
+            while(number != 0) {
                 sum += number % 10;
                 number /= 10;
             }

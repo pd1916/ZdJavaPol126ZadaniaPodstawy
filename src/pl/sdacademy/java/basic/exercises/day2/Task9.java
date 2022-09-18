@@ -33,7 +33,7 @@ public class Task9 {
             } else if("Enough".equals(input)) {
                 break;
             } else {
-                if (lengthOfTheLongestWord < input.length()) {
+                if(lengthOfTheLongestWord < input.length()) {
                     longestWord = input;
                     lengthOfTheLongestWord = input.length();
                 }

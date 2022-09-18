@@ -36,9 +36,9 @@ public class Task8 {
                     //String s = String.valueOf(currentChar + 32); // option2
                     //result  = result + String.valueOf(currentChar + 32);
                     //result  = result + s;
-                    result.append((char)(currentChar + DIFF_UPPER_AND_LOWER_IN_ASCII));
-                } else if (currentChar >= VALUE_LOWER_A_IN_ASCII && currentChar <= VALUE_LOWER_Z_IN_ASCII) { //mała litera
-                    result.append((char)(currentChar - DIFF_UPPER_AND_LOWER_IN_ASCII));
+                    result.append((char) (currentChar + DIFF_UPPER_AND_LOWER_IN_ASCII));
+                } else if(currentChar >= VALUE_LOWER_A_IN_ASCII && currentChar <= VALUE_LOWER_Z_IN_ASCII) { //mała litera
+                    result.append((char) (currentChar - DIFF_UPPER_AND_LOWER_IN_ASCII));
                 } else {
                     result.append(currentChar);
                 }

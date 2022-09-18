@@ -1,6 +1,5 @@
 package pl.sdacademy.java.basic.exercises.day1;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Task2 {
@@ -27,12 +26,12 @@ public class Task2 {
         // 2 * pi * r
         // 2 * 3,14F * (diameter / 2 )
         // return 2 * PI * radius;
-        return 2 * (float)Math.PI * radius;
+        return 2 * (float) Math.PI * radius;
     }
 
     private static float calculateAreaOfACircle(float radius) {
         // pi * r * r
         //return PI * radius * radius;
-        return (float)(Math.PI * Math.pow(radius, 2));
+        return (float) (Math.PI * Math.pow(radius, 2));
     }
 }
