@@ -9,6 +9,10 @@ public class Task11 {
         input = "java";
         System.out.println("Input: " + input);
         System.out.println("Result: " + isPalindrome(input));
+
+        input = null;
+        System.out.println("Input: " + input);
+        System.out.println("Result: " + isPalindrome(input));
     }
 
     private static boolean isPalindrome(String input) {
