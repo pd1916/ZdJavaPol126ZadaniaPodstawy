@@ -9,6 +9,7 @@ public class Main {
 //
 //        Cat[] cats = {cat, cat1, cat2};
 
+
         Cat[] cats = new Cat[3];
         cats[0] = new Cat("Mruczek");
         cats[1] = new Cat("Filemon");
