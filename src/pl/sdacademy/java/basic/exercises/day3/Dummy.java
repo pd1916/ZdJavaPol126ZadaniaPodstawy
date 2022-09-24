@@ -1,7 +1,6 @@
 package pl.sdacademy.java.basic.exercises.day3;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class Dummy {
 
